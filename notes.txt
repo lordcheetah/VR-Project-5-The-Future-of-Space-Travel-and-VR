@@ -1,0 +1,30 @@
+Most space exploration is done by robots. Even the space exploration by humans is only experienced by a very small number of people. VR 360 pictures and video can be used to bring space exploration to a larger number of people.
+
+1) Mars Exploration
+A reconstruction of Mars' surface
+Tour from holographic Buzz Aldrin
+2x More accurate at determining specific distances
+3x more accurate at determining specific angles
+Geologists, many from outside field, felt tool was more accurate
+realized they could run up a hill to get spatial awareness
+
+2) Project Sidekick
+Experts can guide astronauts on ISS through complicated procedures by watching astronauts' actions and overly guidance, diagrams, and other info
+Practiced appendicitis diagnosing and testing on underwater facility and vomet comet
+Reduced time from 4 hours to 1 hour
+Played space invaders
+
+3) Protospace
+Engineers can explore detailed models of spacecraft and machinery as they're designed
+Allow for a group of mechanical engineers ot collaboratively visualize a design in true scale
+Can see how parts fit together better than 2d modelling
+Can practice tricky installation
+
+Designed Surface Water and Ocean Topography satellite which will be used to observe climate change's effect on the oceans
+Designed Mars 2020 Rover which will collect Martian surface samples and bring them back to Earth
+Designed large orbiter to circle Europa
+
+4) Data gathered by orbiters can be used to explore virtually and guide rovers or astronauts
+Everyone could help explore together not just JPL and NASA.
+
+5) keep astronauts sane

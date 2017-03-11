@@ -47,6 +47,7 @@ public class ButtonInfo : MonoBehaviour
 
 	public void ShowNextInfo()
 	{
+		this.GetComponent<GvrAudioSource>().Play();
 		string buttonName = gameObject.name;
 		index++;
 

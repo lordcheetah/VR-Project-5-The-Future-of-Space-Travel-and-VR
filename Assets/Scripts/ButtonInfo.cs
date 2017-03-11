@@ -53,7 +53,7 @@ public class ButtonInfo : MonoBehaviour
 		switch (buttonName)
 		{
 		case "Button Project Sidekick":
-			if (index > 4)
+			if (index > 5)
 				index = 0;
 			
 			switch (index) {
@@ -64,19 +64,23 @@ public class ButtonInfo : MonoBehaviour
 				uiText.text = "Experts can guide astronauts on the International Space Station through complicated procedures by watching astronauts' actions and overlay guidance, diagrams, and other info";
 				break;
 			case 2:
-				uiText.text = "Astronauts practiced appendicitis diagnoses and testing during an underwater expedition (NASA Extreme Environment Mission Operations 21 (NEEMO)) and on the Vomet Comet (an airplane for experiencing zero-g)";
+				uiText.text = "";
+				PlayMovieSidekick ();
 				break;
 			case 3:
-				uiText.text = "Project Sidekick reduced the time for the appendicitis was reduced from 4 hours to 1 hour";
+				uiText.text = "Astronauts practiced appendicitis diagnoses and testing during an underwater expedition (NASA Extreme Environment Mission Operations 21 (NEEMO)) and on the Vomet Comet (an airplane for experiencing zero-g)";
 				break;
 			case 4:
+				uiText.text = "Project Sidekick reduced the time for the appendicitis was reduced from 4 hours to 1 hour";
+				break;
+			case 5:
 				uiText.text = "ISS astronauts also used it to play Space Invaders";
 				break;
 			}
 			break;
 
 		case "Button OnSight":
-			if (index > 6)
+			if (index > 7)
 				index = 0;
 
 			switch (index) {
@@ -100,6 +104,10 @@ public class ButtonInfo : MonoBehaviour
 				break;
 			case 6:
 				uiText.text = "The public can get a tour by a holographic Buzz Aldrin at the Kennedy Space Center";
+				break;
+			case 7:
+				uiText.text = "";
+				PlayMovieBuzz ();
 				break;
 			}
 			break;
@@ -128,7 +136,7 @@ public class ButtonInfo : MonoBehaviour
 			break;
 
 		case "Button Public Virtual Exploration":
-			if (index > 4)
+			if (index > 3)
 				index = 0;
 
 			switch (index) {
@@ -160,7 +168,7 @@ public class ButtonInfo : MonoBehaviour
 				break;
 			case 2:
 				uiText.text = "";
-				PlayMovie();
+				PlayMovieSanity();
 				break;
 			case 3:
 				uiText.text = "Seeing sunlight, trees, and blue sky contributes to mental health";
@@ -182,11 +190,25 @@ public class ButtonInfo : MonoBehaviour
 		Debug.Log ("Pressed " + buttonName.ToString() + " " + index.ToString());
 	}
 
-	public void PlayMovie()
+	public void PlayMovieSanity()
 	{
+		#if UNITY_ANDROID
 		Handheld.PlayFullScreenMovie ("AstronautSanity.mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);
+		#endif
+	}
 
-		Debug.Log ("Pressed");
+	public void PlayMovieSidekick()
+	{
+		#if UNITY_ANDROID
+		Handheld.PlayFullScreenMovie ("ProjectSidekick.mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);
+		#endif
+	}
+
+	public void PlayMovieBuzz()
+	{
+		#if UNITY_ANDROID
+		Handheld.PlayFullScreenMovie ("HoloBuzz.mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);
+		#endif
 	}
 
 	public void gazeLightUp()
